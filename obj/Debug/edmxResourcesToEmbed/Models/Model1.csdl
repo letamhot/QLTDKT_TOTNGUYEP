@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="idThiDua" Type="Int32" Nullable="false" />
     <Property Name="tenBaoCao" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="noiDungBaoCao" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -18,7 +18,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenBaoCao" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="moTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
@@ -28,7 +28,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="thiDuaId" Type="Int32" Nullable="false" />
     <Property Name="donViDangKyId" Type="Int32" Nullable="false" />
     <Property Name="noiDungDangKy" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
@@ -53,7 +53,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="idTenDanhHieu" Type="Byte" />
     <Property Name="soHieu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="ngayDanhHieu" Type="DateTime" Precision="3" />
@@ -80,7 +80,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenCapKyKhenThuong" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="moTa" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
@@ -90,9 +90,9 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="tenChucVu" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
-    <Property Name="moTa" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenChucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="moTa" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
     <Property Name="ngayCapNhat" Type="DateTime" Precision="3" />
   </EntityType>
@@ -103,7 +103,7 @@
     <Property Name="id" Type="Int32" Nullable="false" />
     <Property Name="tenChuKy" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
-    <Property Name="daXoa" Type="Int32" />
+    <Property Name="daXoa" Type="Boolean" />
   </EntityType>
   <EntityType Name="qltdkt_dm_danhhieuthidua">
     <Key>
@@ -127,27 +127,27 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="tenDonVi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenDonVi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="idCha" Type="Int32" Nullable="false" />
-    <Property Name="diaChi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
-    <Property Name="anh" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
-    <Property Name="ngayTao" Type="DateTime" Precision="3" />
-    <Property Name="ngayCapNhat" Type="DateTime" Precision="3" />
+    <Property Name="ngayTao" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="anh" Type="String" MaxLength="350" FixedLength="false" Unicode="false" Nullable="false" />
   </EntityType>
   <EntityType Name="qltdkt_dm_donviphatdong">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenPhatDong" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="moTa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="isCamKet" Type="Byte" />
   </EntityType>
   <EntityType Name="qltdkt_dm_hinhthuckhenthuong">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenHinhThucKhenThuong" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="moTa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
@@ -164,27 +164,27 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="maNhanVien" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="hoTen" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="chucVu" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="donVi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="trinhDoHocVan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="chucVu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="donVi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="soDienThoai" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ngayTao" Type="DateTime" Precision="3" />
+    <Property Name="ngayCapNhat" Type="DateTime" Precision="3" />
+    <Property Name="daXoa" Type="Boolean" />
     <Property Name="ngaySinh" Type="DateTime" Precision="0" />
     <Property Name="gioiTinh" Type="Boolean" />
     <Property Name="anhDaiDien" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
     <Property Name="trangThai" Type="Byte" />
-    <Property Name="ngayTao" Type="DateTime" Precision="3" />
-    <Property Name="ngayCapNhat" Type="DateTime" Precision="3" />
-    <Property Name="daXoa" Type="Boolean" />
+    <Property Name="trinhDoHocVan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="qltdkt_dm_role">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="roleName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="roleUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="roleParent" Type="Int32" />
@@ -198,7 +198,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenThiDua" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="moTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
@@ -208,26 +208,26 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="tenTrinhDoHocVan" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-    <Property Name="chuyenNganh" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenTrinhDoHocVan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="chuyenNganh" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="qltdkt_groupuser">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenNhom" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="moTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="ngayTao" Type="DateTime" Precision="3" />
     <Property Name="ngayCapNhat" Type="DateTime" Precision="3" />
     <Property Name="daXoa" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
   </EntityType>
-  <EntityType Name="qltdkt_groupuserbyrole">
+  <EntityType Name="qltdkt_groupuserbyroles">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="groupUserId" Type="Int32" Nullable="false" />
     <Property Name="roleId" Type="Int32" Nullable="false" />
   </EntityType>
@@ -235,7 +235,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="idDonVi" Type="Int32" Nullable="false" />
     <Property Name="idNhanVien" Type="Int32" />
     <Property Name="anhDaiDien" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
@@ -250,7 +250,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="thiDuaId" Type="Int32" />
     <Property Name="kieuThiDua" Type="Byte" />
     <Property Name="chiTietKieu" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
@@ -274,7 +274,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="thiDuaId" Type="Int32" Nullable="false" />
     <Property Name="dangKyThiDuaId" Type="Int32" Nullable="false" />
     <Property Name="nhanXetChung" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
@@ -286,7 +286,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="capKhenThuong" Type="Byte" />
     <Property Name="quyetDinh" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
     <Property Name="soHieu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
@@ -314,7 +314,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="quyetDinh" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
     <Property Name="phatDongId" Type="Int32" Nullable="false" />
     <Property Name="kieuThiDua" Type="Int32" Nullable="false" />
@@ -339,7 +339,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="tenDangNhap" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="matKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="nhanVienId" Type="Int32" />
@@ -351,7 +351,7 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="userId" Type="Int32" Nullable="false" />
     <Property Name="groupUserId" Type="Int32" Nullable="false" />
     <Property Name="moTa" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -373,7 +373,7 @@
     <EntitySet Name="qltdkt_dm_thidua" EntityType="Self.qltdkt_dm_thidua" />
     <EntitySet Name="qltdkt_dm_trinhdohocvan" EntityType="Self.qltdkt_dm_trinhdohocvan" />
     <EntitySet Name="qltdkt_groupuser" EntityType="Self.qltdkt_groupuser" />
-    <EntitySet Name="qltdkt_groupuserbyrole" EntityType="Self.qltdkt_groupuserbyrole" />
+    <EntitySet Name="qltdkt_groupuserbyroles" EntityType="Self.qltdkt_groupuserbyroles" />
     <EntitySet Name="qltdkt_hosokyyeu" EntityType="Self.qltdkt_hosokyyeu" />
     <EntitySet Name="qltdkt_hosothidua" EntityType="Self.qltdkt_hosothidua" />
     <EntitySet Name="qltdkt_ketquathidua" EntityType="Self.qltdkt_ketquathidua" />

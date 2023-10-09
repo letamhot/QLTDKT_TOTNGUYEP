@@ -17,9 +17,8 @@ namespace QLTDKT.Models
         public int id { get; set; }
         public string tenDonVi { get; set; }
         public int idCha { get; set; }
-        public string diaChi { get; set; }
+        public System.DateTime ngayTao { get; set; }
+        public System.DateTime ngayCapNhat { get; set; }
         public string anh { get; set; }
-        public Nullable<System.DateTime> ngayTao { get; set; }
-        public Nullable<System.DateTime> ngayCapNhat { get; set; }
     }
 }

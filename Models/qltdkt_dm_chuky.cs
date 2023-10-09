@@ -17,6 +17,6 @@ namespace QLTDKT.Models
         public int id { get; set; }
         public string tenChuKy { get; set; }
         public Nullable<System.DateTime> ngayTao { get; set; }
-        public Nullable<int> daXoa { get; set; }
+        public Nullable<bool> daXoa { get; set; }
     }
 }

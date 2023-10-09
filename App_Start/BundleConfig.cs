@@ -52,7 +52,11 @@ namespace QLTDKT
                 "~/assets/libs/select2/select2.min.css",
                 "~/assets/libs/jstree/style.min.css",
                 "~/assets/libs/switchery/switchery.min.css",
-                "~/assets/libs/toastr/toastr.min.css"
+                "~/assets/libs/toastr/toastr.min.css",
+                "~/assets/fonts/materialdesignicons-webfont.woff",
+                "~/assets/fonts/materialdesignicons-webfont.woff2",
+                "~/assets/fonts/materialdesignicons-webfont.ttf"
+
             ));
             bundles.Add(new ScriptBundle("~/assets/js/default").Include(
                 "~/assets/js/jquery.min.js",

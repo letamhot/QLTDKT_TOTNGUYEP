@@ -16,7 +16,7 @@ namespace QLTDKT.Models.Service.roleService
         {
             List<QuyenMenuFull> lsQuyenCha = new List<QuyenMenuFull>();
             DataTable dt = new DataTable();
-            string sql = "select * from qltdkt_role where roleParent = 0 and id in (select roleId from qltdkt_groupuserbyrole where groupUserId in (select groupUserId from qltdkt_userbygroup where userId = " + userId + ")) order by priority";
+            string sql = "select * from qltdkt_dm_role where roleParent = 0 and id in (select roleId from qltdkt_groupuserbyroles where groupUserId in (select groupUserId from qltdkt_userbygroup where userId = " + userId + ")) order by priority";
             dt = _sqlAccess.getDataFromSql(sql, "").Tables[0];
             if (dt.Rows.Count > 0)
             {
@@ -24,7 +24,7 @@ namespace QLTDKT.Models.Service.roleService
                 {
                     List<QuyenMenuFull> lsChild = new List<QuyenMenuFull>();
                     DataTable dt_child = new DataTable();
-                    string sql_child = "select * from qltdkt_role where roleParent = " + int.Parse(dt.Rows[i]["id"].ToString()) + " and id in (select roleId from qltdkt_groupuserbyrole where groupUserId in (select groupUserId from qltdkt_userbygroup where userId = " + userId + ")) order by priority";
+                    string sql_child = "select * from qltdkt_dm_role where roleParent = " + int.Parse(dt.Rows[i]["id"].ToString()) + " and id in (select roleId from qltdkt_groupuserbyroles where groupUserId in (select groupUserId from qltdkt_userbygroup where userId = " + userId + ")) order by priority";
                     dt_child = _sqlAccess.getDataFromSql(sql_child, "").Tables[0];
                     if (dt_child.Rows.Count > 0)
                     {
@@ -43,7 +43,7 @@ namespace QLTDKT.Models.Service.roleService
                             //lsChild.Add(qmf);
                             DataTable dt_child2 = new DataTable();
                             List<QuyenMenuFull> lsChild2 = new List<QuyenMenuFull>();
-                            string sql_child2 = "select * from qltdkt_role where roleParent = " + int.Parse(dt_child.Rows[j]["id"].ToString()) + " and id in (select roleId from qltdkt_groupuserbyrole where groupUserId in (select groupUserId from qltdkt_userbygroup where userId = " + userId + ")) order by priority";
+                            string sql_child2 = "select * from qltdkt_dm_role where roleParent = " + int.Parse(dt_child.Rows[j]["id"].ToString()) + " and id in (select roleId from qltdkt_groupuserbyroles where groupUserId in (select groupUserId from qltdkt_userbygroup where userId = " + userId + ")) order by priority";
                             dt_child2 = _sqlAccess.getDataFromSql(sql_child2, "").Tables[0];
 
 

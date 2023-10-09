@@ -41,7 +41,7 @@ namespace QLTDKT.Models
         public virtual DbSet<qltdkt_dm_thidua> qltdkt_dm_thidua { get; set; }
         public virtual DbSet<qltdkt_dm_trinhdohocvan> qltdkt_dm_trinhdohocvan { get; set; }
         public virtual DbSet<qltdkt_groupuser> qltdkt_groupuser { get; set; }
-        public virtual DbSet<qltdkt_groupuserbyrole> qltdkt_groupuserbyrole { get; set; }
+        public virtual DbSet<qltdkt_groupuserbyroles> qltdkt_groupuserbyroles { get; set; }
         public virtual DbSet<qltdkt_hosokyyeu> qltdkt_hosokyyeu { get; set; }
         public virtual DbSet<qltdkt_hosothidua> qltdkt_hosothidua { get; set; }
         public virtual DbSet<qltdkt_ketquathidua> qltdkt_ketquathidua { get; set; }

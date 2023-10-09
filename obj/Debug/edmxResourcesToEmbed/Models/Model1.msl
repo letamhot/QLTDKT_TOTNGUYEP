@@ -138,10 +138,9 @@
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="tenDonVi" ColumnName="tenDonVi" />
           <ScalarProperty Name="idCha" ColumnName="idCha" />
-          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
-          <ScalarProperty Name="anh" ColumnName="anh" />
           <ScalarProperty Name="ngayTao" ColumnName="ngayTao" />
           <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
+          <ScalarProperty Name="anh" ColumnName="anh" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -151,6 +150,7 @@
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="tenPhatDong" ColumnName="tenPhatDong" />
           <ScalarProperty Name="moTa" ColumnName="moTa" />
+          <ScalarProperty Name="isCamKet" ColumnName="isCamKet" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -181,15 +181,15 @@
           <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="chucVu" ColumnName="chucVu" />
           <ScalarProperty Name="donVi" ColumnName="donVi" />
-          <ScalarProperty Name="trinhDoHocVan" ColumnName="trinhDoHocVan" />
           <ScalarProperty Name="soDienThoai" ColumnName="soDienThoai" />
+          <ScalarProperty Name="ngayTao" ColumnName="ngayTao" />
+          <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
+          <ScalarProperty Name="daXoa" ColumnName="daXoa" />
           <ScalarProperty Name="ngaySinh" ColumnName="ngaySinh" />
           <ScalarProperty Name="gioiTinh" ColumnName="gioiTinh" />
           <ScalarProperty Name="anhDaiDien" ColumnName="anhDaiDien" />
           <ScalarProperty Name="trangThai" ColumnName="trangThai" />
-          <ScalarProperty Name="ngayTao" ColumnName="ngayTao" />
-          <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
-          <ScalarProperty Name="daXoa" ColumnName="daXoa" />
+          <ScalarProperty Name="trinhDoHocVan" ColumnName="trinhDoHocVan" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -240,9 +240,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="qltdkt_groupuserbyrole">
-      <EntityTypeMapping TypeName="quanlythiduakhenthuongModel.qltdkt_groupuserbyrole">
-        <MappingFragment StoreEntitySet="qltdkt_groupuserbyrole">
+    <EntitySetMapping Name="qltdkt_groupuserbyroles">
+      <EntityTypeMapping TypeName="quanlythiduakhenthuongModel.qltdkt_groupuserbyroles">
+        <MappingFragment StoreEntitySet="qltdkt_groupuserbyroles">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="groupUserId" ColumnName="groupUserId" />
           <ScalarProperty Name="roleId" ColumnName="roleId" />

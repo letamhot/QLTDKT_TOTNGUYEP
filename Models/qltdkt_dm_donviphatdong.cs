@@ -17,5 +17,6 @@ namespace QLTDKT.Models
         public int id { get; set; }
         public string tenPhatDong { get; set; }
         public string moTa { get; set; }
+        public Nullable<byte> isCamKet { get; set; }
     }
 }

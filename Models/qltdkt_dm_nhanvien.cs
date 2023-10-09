@@ -20,14 +20,14 @@ namespace QLTDKT.Models
         public string email { get; set; }
         public string chucVu { get; set; }
         public string donVi { get; set; }
-        public string trinhDoHocVan { get; set; }
         public string soDienThoai { get; set; }
+        public Nullable<System.DateTime> ngayTao { get; set; }
+        public Nullable<System.DateTime> ngayCapNhat { get; set; }
+        public Nullable<bool> daXoa { get; set; }
         public Nullable<System.DateTime> ngaySinh { get; set; }
         public Nullable<bool> gioiTinh { get; set; }
         public string anhDaiDien { get; set; }
         public Nullable<byte> trangThai { get; set; }
-        public Nullable<System.DateTime> ngayTao { get; set; }
-        public Nullable<System.DateTime> ngayCapNhat { get; set; }
-        public Nullable<bool> daXoa { get; set; }
+        public string trinhDoHocVan { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace QLTDKT.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class qltdkt_groupuserbyrole
+    public partial class qltdkt_groupuserbyroles
     {
         public int id { get; set; }
         public int groupUserId { get; set; }

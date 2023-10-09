@@ -186,7 +186,7 @@
     <Compile Include="Models\qltdkt_groupuser.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\qltdkt_groupuserbyrole.cs">
+    <Compile Include="Models\qltdkt_groupuserbyroles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\qltdkt_hosokyyeu.cs">
