@@ -119,6 +119,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DonViController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -211,10 +212,14 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Service\Constant.cs" />
+    <Compile Include="Models\Service\groupUserService\groupUserService.cs" />
+    <Compile Include="Models\Service\groupUserService\JsTreeModel.cs" />
     <Compile Include="Models\Service\roleService\QuyenMenuFull.cs" />
     <Compile Include="Models\Service\roleService\roleService.cs" />
     <Compile Include="Models\Service\SqlDataAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\JsTreeAccess.cs" />
+    <Compile Include="Util\Node.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -288,6 +293,7 @@
     <Content Include="Views\Shared\SideBar.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Logout.cshtml" />
+    <Content Include="Views\DonVi\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
